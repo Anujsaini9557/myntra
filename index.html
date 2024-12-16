@@ -1,56 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra_App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/4134340e8e.js" crossorigin="anonymous"></script>
 </head>
-<button id="btn">click me</button>
-
 <body>
-  <script>
-    // let sum = function (num1, num2) {
-    //   return num1 + num2;
-    // };
-    // console.log(sum(7, 9));
+  <header>
+    <div class="logo_container">
+        <a href="#"><img class="myntra_home" src="images/myntra_logo.webp" alt="Myntra Home"></a>
+    </div>
+    <nav class="nav_bar">
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Home & Living</a>
+        <a href="#">Beauty</a>
+        <a href="#">Studio <sup>New</sup></a>
+    </nav>
+    <div class="search_bar">
+      <i class="fa-solid fa-magnifying-glass search_icon"></i>
+        <input class="search_input" placeholder="Search for products, brands and more">
+    </div>
+    <div class="action_bar">
+        <div class="action_container">
+          <i class="fa-solid fa-user"></i>
+            <span class="action_name">Profile</span>
+        </div>
 
-    // let sum1 = (num1, num2) => {
-    //   return num1 + num2;
-    // };
+        <div class="action_container">
+          <i class="fa-solid fa-heart"></i>
+            <span class="action_name">Wishlist</span>
+        </div>
 
-    // console.log(sum1(4, 9));
+        <div class="action_container">
+          <i class="fa-solid fa-cart-shopping"></i>
+            <span class="action_name">Bag</span>
+        </div>
+    </div>
+</header>
 
-    // let square = (num) => num * num;
-    // console.log(square(8));
+  <main>
 
-    // setInterval(square, 2000);
-
-    // //   let alarm = () => console.log("Its time to wakeup");
-    // // setTime(() => console.log("Its time to wakeup"), 2000);
-    // // console.log("alarm set");
-
-    // let alarm = () => console.log(`good Morning, ${new Date()}`);
-    // let intervalId = setInterval(alarm, 2000);
-    // setTimeout(() => clearInterval(intervalId), 9000);
-
-    let btn_element = document.querySelector('#btn');
-    let behaviour = event => console.log('I am Clicked');
-    let habbit = event => console.log('Code Daily');
-
-    btn_element.addEventListener('click', behaviour);
-    btn_element.addEventListener('click', habbit);
-    btn_element.removeEventListener('click', behaviour);
-
-    let arr = [3, 5, 8, 4];
-    for (let i = 0; i < arr.length; i++) {
-      console.log(arr[i]);
-    }
-
-    arr.forEach((num) => console.log(num));
     
+  </main>
+  <footer>
 
-  </script>
+  </footer>
+
 </body>
-
 </html>
